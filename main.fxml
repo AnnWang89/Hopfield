@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="_main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nn.hw3_2.Controller">
+   <children>
+      <Text fill="#465364" layoutX="245.0" layoutY="60.0" onMouseClicked="#_Choose_Basic" stroke="#391111" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic" wrappingWidth="78.29988098144531">
+         <font>
+            <Font name="Rockwell Bold" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2fff6" height="670.0" layoutX="50.0" layoutY="100.0" onMouseClicked="#_modify_invisable" stroke="#001554" strokeType="INSIDE" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2fff6" height="670.0" layoutX="269.0" layoutY="100.0" onMouseClicked="#_modify_invisable" stroke="#001554" strokeType="INSIDE" width="227.0" />
+      <Text fx:id="_file_name" fill="#7f143f" layoutX="20.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="4.0" text=" File Name" wrappingWidth="203.35035705566406">
+         <font>
+            <Font name="Rockwell" size="39.0" />
+         </font>
+      </Text>
+      <Text fill="#707092" layoutX="420.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning times">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Text>
+      <Slider fx:id="_learning_times" blockIncrement="2.0" layoutX="534.0" layoutY="46.0" majorTickUnit="2.0" max="30.0" min="1.0" minorTickCount="1" onMouseReleased="#onSliderChanged_learning_times" prefHeight="40.0" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Text fx:id="_show_words_train" fill="#2e2e57" layoutX="60.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#465364" layoutX="330.0" layoutY="60.0" onMouseClicked="#_Choose_Bonus" stroke="#391111" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus" wrappingWidth="78.29988098144531">
+         <font>
+            <Font name="Rockwell Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_test" fill="#2e2e57" layoutX="280.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_output" fill="#aa3300" layoutX="501.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fill="#50c5c1" layoutX="60.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train">
+         <font>
+            <Font name="Rockwell Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#50c5c1" layoutX="280.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test">
+         <font>
+            <Font name="Rockwell Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#50c5c1" layoutX="500.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output">
+         <font>
+            <Font name="Rockwell Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_train1" fill="#2e2e57" layoutX="133.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_test1" fill="#2e2e57" layoutX="350.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_output1" fill="#aa3300" layoutX="582.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_train2" fill="#2e2e57" layoutX="206.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_test2" fill="#2e2e57" layoutX="417.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="78.29988098144531">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="_show_words_output2" fill="#aa3300" layoutX="661.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" wrappingWidth="265.59991455078125">
+         <font>
+            <Font name="SimSun" size="10.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="_modify_test" layoutX="770.0" layoutY="123.0" prefHeight="615.0" prefWidth="113.0" visible="false" />
+      <Text fill="#707092" layoutX="811.0" layoutY="118.0" onMouseClicked="#_show_modify" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="_modify_ornot" layoutX="867.0" layoutY="105.0" mnemonicParsing="false" />
+      <Text fill="#707092" layoutX="762.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/p">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="_p_ornot" layoutX="793.0" layoutY="47.0" mnemonicParsing="false" selected="true" />
+      <Text fill="#707092" layoutX="832.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="θ=0">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="_theta_zero" layoutX="865.0" layoutY="47.0" mnemonicParsing="false" />
+      <Text fill="#707092" layoutX="802.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="no same" wrappingWidth="59.11425781249994">
+         <font>
+            <Font name="Rockwell" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="_no_same" layoutX="866.0" layoutY="75.0" mnemonicParsing="false" />
+   </children>
+</Pane>
