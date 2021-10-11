@@ -2,7 +2,7 @@
 # Hopfield
 
 1. 程式執行說明:
-   執行檔**Hopfield.jar**要用命令題是字元開啟，並且要先下載JavaFX:
+   執行檔**Hopfield.jar**要用命令題示字元開啟，並且要先下載JavaFX:
 >    java --module-path "C:\javafx-sdk-11.0.2\lib" --add-modules javafx.controls,javafx.fxml -jar Hopfield.jar
    
 2. 執行介面說明:
